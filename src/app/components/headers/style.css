@@ -1,0 +1,7 @@
+#menuList {
+  @apply flex flex-col gap-y-2 rounded-b-xl py-5;
+}
+
+#menuListItem {
+  @apply text-xl uppercase font-medium  hover:text-primary  text-gray-400 py-1 px-4 rounded-lg;
+}
