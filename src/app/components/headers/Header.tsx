@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { HeaderLogo } from "../logo/HeaderLogo";
+import Link from "next/link";
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -42,12 +43,16 @@ export const Header = () => {
           </div>
           <div className="w-1/2">
             <ul className="flex justify-evenly">
-              <li className=" text-primary px-1 uppercase text-base font-medium hover:text-primary">
-                Home
-              </li>
-              <li className="px-1  uppercase text-base font-medium hover:text-primary">
-                About
-              </li>
+              <Link href="/">
+                <li className=" text-primary px-1 uppercase text-base font-medium hover:text-primary">
+                  Home
+                </li>
+              </Link>
+              <Link href="/about">
+                <li className="px-1  uppercase text-base font-medium hover:text-primary">
+                  About
+                </li>
+              </Link>
               <li className="px-1 uppercase text-base font-medium hover:text-primary">
                 resume
               </li>
