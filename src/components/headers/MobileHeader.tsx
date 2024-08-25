@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import menu from "../../../../public/menu.svg";
 import { HeaderLogo } from "../logo/HeaderLogo";
 import { useEffect, useState } from "react";
 import { MenuList } from "./MenuList";
@@ -35,7 +34,7 @@ export const MobileHeader = () => {
   const [visible, setVisible] = useState(false);
   return (
     <main
-      className={`lg:hidden py-4  fixed top-0 left-0 w-full transition-all duration-300 ${
+      className={`xl:hidden py-4  fixed top-0 left-0 w-full transition-all duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } ${isScrolled ? "bg-black" : "bg-transparent"} z-50`}
     >
@@ -43,7 +42,7 @@ export const MobileHeader = () => {
         <div className=" container mx-auto px-2 flex justify-between items-center">
           <HeaderLogo />
           <div onClick={() => setVisible(!visible)}>
-            <Image src={menu} alt="menubar" width={60} height={60} />
+            <Image src="/menu.svg" alt="menubar" width={60} height={60} />
           </div>
         </div>
         <div
