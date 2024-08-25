@@ -34,7 +34,7 @@ export default function AboutUsPage() {
           <div className=" flex flex-col gap-y-4">
             <div className="flex flex-col gap-y-3">
               <h1 className="text-white text-3xl md:text-4xl ">
-                Hi There! I'm Vkash Kumar
+                Hi There! I am Vikash Kumar
               </h1>
               <h3 className="text-primary text-2xl  md:text-3xl">
                 Web Developer
